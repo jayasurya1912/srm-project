@@ -15,6 +15,15 @@
 
 <body>
 
+  <!-- PRELOADER -->
+<div id="preloader">
+  <div class="loader-circle">
+    <i class="fas fa-home loader-icon"></i>
+  </div>
+</div>
+
+
+
   <!-- TOP BAR -->
 <div class="top-bar py-2 bg-white border-bottom">
   <div class="container-fluid">
@@ -150,8 +159,8 @@
       <h4 class="contact-sub">Contact Information</h4>
 
       <h1 class="contact-heading">
-        We are always ready to <br>
-        help you and answer <br>
+        We are always ready to 
+        help you and answer 
         your questions
       </h1>
 
@@ -160,7 +169,7 @@
         <p class="info-text">
           6/106,Sri Ramanujar Madam,
 Tirupathur-Salem Road,
-KORATTY-635 602.
+Koratty-635 602.
 Tirupathur Dist
         </p>
       </div>
@@ -382,5 +391,13 @@ Tirupathur Dist
 <script>
   AOS.init();
 </script>
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("preloader");
+    loader.classList.add("fade-out");
+    setTimeout(() => loader.style.display = "none", 600);
+  });
+</script>
+
 </body>
 </html>

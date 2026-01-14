@@ -16,6 +16,14 @@
 
 <body>
 
+
+  <div id="preloader">
+  <div class="loader-circle">
+    <i class="fas fa-home loader-icon"></i>
+  </div>
+</div>
+
+
   <!-- TOP BAR -->
 <div class="top-bar py-2 bg-white border-bottom">
   <div class="container-fluid">
@@ -1066,5 +1074,13 @@ document.getElementById('propertyCarousel').addEventListener('slide.bs.carousel'
 <script>
   AOS.init();
 </script>
+<script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("preloader");
+    loader.classList.add("fade-out");
+    setTimeout(() => loader.style.display = "none", 600);
+  });
+</script>
+
 </body>
 </html>
